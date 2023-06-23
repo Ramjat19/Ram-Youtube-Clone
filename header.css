@@ -1,0 +1,188 @@
+.header{
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(206, 205, 205);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.left-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle-sec{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 35px;
+    align-items: center;
+    max-width: 700px;
+}
+.right-sec{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+.search-bar{
+    height: 34px;
+    flex: 1;
+    padding-left: 10px;
+    border: 0.5px;
+    border-style: solid;
+    border-color: rgb(179, 176, 176);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Arial;
+    font-size: 16px;
+}
+.u-icon{
+    flex: 1;
+    height: 60px;
+    cursor: pointer;
+}
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon img{
+    width: 20px;
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.menu-icon:hover img{
+    background-color: light;
+}
+.cinema-icon{
+    height: 15px;
+    cursor: pointer;
+}
+.notification-icon{
+    height: 20px;
+    cursor: pointer;
+}
+.search-icon{
+    height: 17px;
+}
+.search-button{
+    height: 37.5px;
+    width: 60px;
+    border: 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -1px;
+    margin-right: 12px;
+    background-color: rgb(242, 239, 239);
+    border-style: solid;
+    border-color: rgb(179, 176, 176);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.search-button .tooltip,
+.voice-button .tooltip{
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: rgb(141, 138, 138);
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    padding: 2px 6px 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.cinema-button .tooltip{
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: rgb(141, 138, 138);
+    color: white;
+    position: absolute;
+    bottom: -40px;
+    padding: 2px 6px 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.cinema-button:hover .tooltip{
+    opacity: 1;
+}
+.voice-icon{
+    height: 18px;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+.account-pic{
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: purple;
+}
+.nine-dot-icon{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.noti-no{
+    width: 12px;
+    height: 16px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    padding-left: 4px;
+    border-radius: 9px;
+    font-size: 14px;
+    padding-right: -1px;
+    top: 5px;
+    right: 67px;
+}
+.cinema-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
